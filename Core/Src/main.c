@@ -21,6 +21,7 @@
 #include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
+#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -89,6 +90,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART1_UART_Init();
+  printf("Hello DFU\n");
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
